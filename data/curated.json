@@ -1,0 +1,338 @@
+{
+  "sections": [
+    {
+      "title": "0. Getting Started",
+      "description": "Essential plugins for newcomers. Learn what core features already provide before installing extra tools.",
+      "intro": "#### First 30 Minutes (No Plugins Required)\n\n**1. Create one vault** and let it be messy — folders can come later.<br>\n**2. Turn on the core plugins you will actually use:** **Daily notes**, **Templates**, **Backlinks**, **Outgoing links**, **Bookmarks**, **File recovery**.<br>\n**3. Write 10 notes and link them with `[[ ]]`. Feel where the friction is.**<br>\n**4. Then return to this list and fix that specific friction.**\n\n#### Optional starting point\n\nThe tool below is a general-purpose starting point: it pays off in almost any vault and does not lock your notes into a private format. It also appears in the job it belongs to further down — start here, then read that section before you install it.",
+      "plugins": ["quickadd", "awesome-format-bar"]
+    },
+    {
+      "title": "1. Capture & Ingestion",
+      "description": "Streamline bringing external highlights, articles, academic citations, and media into your vault.",
+      "plugins": [
+        "obsidian-importer",
+        "readwise-official",
+        "zotlit",
+        "snipd-official",
+        "rss-dashboard",
+        "obsidian-advanced-uri"
+      ],
+      "outro": "> The official **Web Clipper** and **Importer** cover one-off capture and migration; use these plugins for recurring pipelines."
+    },
+    {
+      "title": "2. Writing & Editing",
+      "description": "Enhance text input, table editing, formatting hygiene, autocompletion, and long-form focus.",
+      "plugins": [
+        "harper",
+        "longform",
+        "obsidian-outliner",
+        "various-complements",
+        "obsidian-latex-suite",
+        "novel-word-count"
+      ]
+    },
+    {
+      "title": "3. Organizing & Metadata",
+      "description": "Structure your notes with folder notes, tag management, properties/frontmatter, and attachment rules.",
+      "plugins": [
+        "metadata-menu",
+        "pretty-properties",
+        "tag-wrangler",
+        "obsidian-tagfolder",
+        "folder-notes",
+        "iconic"
+      ],
+      "outro": "> Keep canonical structure in plain frontmatter and core **Properties**; use these tools for editing ergonomics."
+    },
+    {
+      "title": "4. Linking & Discovery",
+      "description": "Find notes with fuzzy search, explore deep graph connections, and leverage semantic AI search.",
+      "plugins": [
+        "obsidian-another-quick-switcher",
+        "smart-connections",
+        "breadcrumbs",
+        "extended-graph",
+        "floating-toc",
+        "obsidian-hover-editor"
+      ]
+    },
+    {
+      "title": "5. Data Views",
+      "description": "Aggregate notes into dynamic queries, database tables, visual diagrams, and interactive canvases.",
+      "plugins": [
+        "datacore",
+        "maps",
+        "calendar-bases",
+        "sheet-plus",
+        "obsidian-excalidraw-plugin",
+        "homepage"
+      ],
+      "outro": "> **Bases** is the default starting point. Use for performance-heavy reactive views."
+    },
+    {
+      "title": "6. Tasks, Habits & Review",
+      "description": "Turn thoughts into action items, visual Kanban boards, time blocks, and spaced repetition flashcards.",
+      "plugins": [
+        "obsidian-tasks-plugin",
+        "tasknotes",
+        "obsidian-day-planner",
+        "obsidian-spaced-repetition",
+        "flashcards-obsidian",
+        "habit-tracker-21"
+      ],
+      "outro": "> Pick one task and date convention; Tasks, TaskNotes, and Day Planner need compatible syntax to share a schedule."
+    },
+    {
+      "title": "7. Output & Publishing",
+      "description": "Share your knowledge through digital gardens, static websites, PDF/Word exports, and slide decks.",
+      "plugins": [
+        "digitalgarden",
+        "obsidian-mkdocs-publisher",
+        "webpage-html-export",
+        "obsidian-enhancing-export",
+        "slides-extended",
+        "share-note"
+      ],
+      "outro": "> Export tools need **Pandoc**; PDF output also needs a LaTeX engine."
+    },
+    {
+      "title": "8. Aesthetics & Interface",
+      "description": "Upgrade Obsidian with modern multi-column navigation, clean minimalism, and polished layouts.",
+      "plugins": [
+        "notebook-navigator",
+        "obsidian-style-settings",
+        "cmdr",
+        "obsidian-hider",
+        "colored-tags"
+      ],
+      "outro": "> Prefer a CSS snippet for purely cosmetic changes."
+    },
+    {
+      "title": "9. Vault Maintenance & Sync",
+      "description": "Cross-platform synchronization, cloud backups, Git version control, and performance optimization.",
+      "plugins": [
+        "obsidian-livesync",
+        "nutstore-sync",
+        "obsidian-git",
+        "consistent-attachments-and-links",
+        "file-cleaner-redux",
+        "janitor"
+      ],
+      "outro": "> Use one sync mechanism per vault. Sync mirrors changes; keep a separate versioned backup."
+    },
+    {
+      "title": "10. Automation & AI",
+      "description": "Integrate LLMs, autonomous coding agents, and automated macros directly inside your vault.",
+      "plugins": [
+        "copilot",
+        "obsidian-local-rest-api",
+        "obsidian-textgenerator-plugin",
+        "local-llm-hub",
+        "lean-terminal",
+        "mcp-tools-istefox"
+      ],
+      "outro": "> Before enabling AI, check what leaves the vault. Prefer local models for sensitive notes and versioned backups for agents that can write."
+    }
+  ],
+  "playbooks": [
+    {
+      "title": "Students & Learners",
+      "description": "Course material needs a reliable path from capture to understanding, memory, and review.",
+      "intro": "**Chain:** import slides and handouts -> annotate the source PDFs with **PDF++** -> sketch each hard concept as a **Mind Map** -> keep one **Periodic Notes** page per lecture week -> export assignments through **Pandoc Plugin** and proofread them with **LanguageTool**. Keep an inbox and a weekly review so the vault stays useful during exam season.",
+      "plugins": [
+        "pdf-plus",
+        "obsidian-mind-map",
+        "periodic-notes",
+        "obsidian-pandoc",
+        "obsidian-languagetool-plugin"
+      ]
+    },
+    {
+      "title": "Researchers & Graduate Students",
+      "description": "Make every conclusion traceable to its source while using AI to accelerate synthesis.",
+      "intro": "**Chain:** manage sources in Zotero -> pull metadata and citations with **Zotero Integration** and **Citations** -> annotate PDFs and EPUBs in **Annotator** -> recover text from scans and screenshots with **Text Extractor** -> keep frontmatter consistent with **Linter** -> plot results with **Charts**. Verify every citation against its source before you draft.",
+      "plugins": [
+        "obsidian-zotero-desktop-connector",
+        "obsidian-citation-plugin",
+        "obsidian-annotator",
+        "text-extractor",
+        "obsidian-linter",
+        "obsidian-charts"
+      ]
+    },
+    {
+      "title": "Developers & Technical Authors",
+      "description": "Turn executable notes into reviewable, maintainable, publishable technical assets.",
+      "intro": "**Chain:** document decisions and commands as small notes -> style listings with **Code Styler** and draw flows with **Mermaid Tools** -> run shell jobs from **Terminal** -> paste references with **Auto Link Title** -> generate a **Table of Contents** for long documents. Treat generated text as a draft and keep tests beside examples.",
+      "plugins": [
+        "obsidian-plugin-toc",
+        "code-styler",
+        "mermaid-tools",
+        "terminal",
+        "obsidian-auto-link-title"
+      ],
+      "outro": "> **Mermaid** diagrams and **Canvas** are core features — check them before adding a diagramming plugin. **Advanced URI** and **Local REST API** are what let scripts, Shortcuts, and agents drive your vault from outside."
+    },
+    {
+      "title": "Writers & Content Creators",
+      "description": "Connect idea capture, long-form structure, media handling, and multi-channel publishing.",
+      "intro": "**Chain:** capture fragments on any device -> draft one file per chapter -> format as you type with **Easy Typing** and **Editing Toolbar** -> watch length in **Better Word Count** -> mark passages with **Highlightr** -> follow the structure in **Quiet Outline** -> resize media with **Image Converter** before you publish. Keep source notes separate from the publishable draft.",
+      "plugins": [
+        "editing-toolbar",
+        "better-word-count",
+        "highlightr-plugin",
+        "obsidian-quiet-outline",
+        "easy-typing-obsidian",
+        "image-converter"
+      ],
+      "outro": "> **Readwise Official** requires a paid Readwise subscription. **Image Converter** rewrites files in place, so keep a backup before a bulk resize."
+    },
+    {
+      "title": "Project Managers & Knowledge Workers",
+      "description": "Keep meetings, commitments, deadlines, and project status in one searchable system.",
+      "intro": "**Chain:** create consistent meeting notes with **Templater** -> parse dates with **Natural Language Dates** -> lay out milestones in **Kanban** and **Calendar** -> track delivery in **dotpm** and set **Reminder** nudges on commitments -> run a Friday review and archive decisions with links to the source meeting.",
+      "plugins": [
+        "templater-obsidian",
+        "nldates-obsidian",
+        "obsidian-kanban",
+        "calendar",
+        "project-manager",
+        "obsidian-reminder-plugin"
+      ],
+      "outro": "> A Notion-style database view is now core: start with **Bases** rather than a community plugin."
+    },
+    {
+      "title": "Visual Thinkers & Designers",
+      "description": "Organize complex problems spatially first, then turn durable insights into reusable text.",
+      "intro": "**Chain:** diverge on **Advanced Canvas** -> turn the stable nodes into a structure you can navigate with **ExcaliBrain** -> make the vault scannable with **Iconize**, **Banners**, and **File Color** -> lay out reference pages with **Multi-Column Markdown**. Link every visual artifact to a decision or brief.",
+      "plugins": [
+        "advanced-canvas",
+        "excalibrain",
+        "obsidian-icon-folder",
+        "obsidian-banners",
+        "obsidian-file-color",
+        "multi-column-markdown"
+      ],
+      "outro": "> **Excalidraw** also ships a community script library (flowcharts, palettes, import helpers) — enable it from the plugin's settings instead of installing another plugin."
+    },
+    {
+      "title": "Language & Media Learners",
+      "description": "Capture, explain, and review vocabulary and expressions in authentic context.",
+      "intro": "**Chain:** watch or listen with **Media Extended** -> pull timestamped transcripts from **YTranscript** or **PodNotes** -> look up words in **Dictionary** -> keep the source page open beside your notes with **Custom Frames** -> import highlights from **Weread**. Revisit the exact clip whenever an example is difficult.",
+      "plugins": [
+        "ytranscript",
+        "podnotes",
+        "media-extended",
+        "obsidian-dictionary-plugin",
+        "obsidian-custom-frames",
+        "obsidian-weread-plugin"
+      ]
+    },
+    {
+      "title": "Automation Builders & Power Users",
+      "description": "Use structured metadata and composable automation to turn Obsidian into a personal operations hub.",
+      "intro": "**Chain:** give notes interactive fields with **Meta Bind** -> bind repeatable actions to **Buttons** -> assemble dashboards in **make.md** -> find anything instantly with **Soma Search** -> let **Claudian** and **Smart Composer** work against that context. Start with one dashboard, measure friction, and add complexity only when it removes a real step.",
+      "plugins": [
+        "obsidian-meta-bind-plugin",
+        "buttons",
+        "make-md",
+        "soma-search",
+        "realclaudian",
+        "smart-composer"
+      ],
+      "outro": "> **make.md** is a heavy, opinionated rework of the interface — try it on a throwaway vault first. For sync, choose one mechanism per vault, never stack multiple sync plugins."
+    }
+  ],
+  "appendix": {
+    "themes": [
+      {
+        "name": "Minimal",
+        "repo": "kepano/obsidian-minimal",
+        "desc": "Clean and distraction-free theme."
+      },
+      {
+        "name": "Catppuccin",
+        "repo": "catppuccin/obsidian",
+        "desc": "Soothing pastel dark and light palette."
+      },
+      {
+        "name": "Border",
+        "repo": "akifyss/obsidian-border",
+        "desc": "Crisp, highly configurable interface."
+      },
+      {
+        "name": "Blue Topaz",
+        "repo": "pkm-er/Blue-Topaz_Obsidian-css",
+        "desc": "Feature-rich blue theme."
+      },
+      {
+        "name": "Baseline",
+        "repo": "aaaaalexis/obsidian-baseline",
+        "desc": "Clean, modern theme with strong typography."
+      },
+      {
+        "name": "Things",
+        "repo": "colineckert/obsidian-things",
+        "desc": "Polished productivity-focused interface."
+      },
+      {
+        "name": "Prism",
+        "repo": "damiankorcz/Prism-Theme",
+        "desc": "Colorful, modern theme with flexible accents."
+      },
+      {
+        "name": "ITS Theme",
+        "repo": "slrvb/Obsidian--ITS-Theme",
+        "desc": "Extensive layout and callout customization."
+      }
+    ],
+    "templates": [
+      {
+        "name": "LYT Kit (Linking Your Thinking)",
+        "url": "https://www.linkingyourthinking.com/",
+        "desc": "Nick Milo's popular Maps of Content (MOC) framework."
+      },
+      {
+        "name": "PARA Method Starter",
+        "url": "https://fortelabs.com/blog/para/",
+        "desc": "Projects, Areas, Resources, Archives structure by Tiago Forte."
+      },
+      {
+        "name": "Zettelkasten Starter Vault",
+        "url": "https://zettelkasten.de/",
+        "desc": "Classic slip-box note-taking methodology."
+      },
+      {
+        "name": "Johnny.Decimal",
+        "url": "https://johnnydecimal.com/",
+        "desc": "Systematic decimal-based organizational scheme."
+      }
+    ],
+    "communities": [
+      {
+        "name": "Obsidian Official Forum",
+        "url": "https://forum.obsidian.md/",
+        "desc": "Official hub for release announcements and technical discussions."
+      },
+      {
+        "name": "Obsidian Discord",
+        "url": "https://discord.gg/obsidianmd",
+        "desc": "Real-time chat community with over 100,000 active members."
+      },
+      {
+        "name": "Reddit r/ObsidianMD",
+        "url": "https://www.reddit.com/r/ObsidianMD/",
+        "desc": "Global community sharing vaults, workflows, and tips."
+      },
+      {
+        "name": "PKMer Community",
+        "url": "https://pkmer.cn/",
+        "desc": "Knowledge management and plugin tutorial community."
+      }
+    ],
+    "notes": {
+      "themes": "> 💡 Themes are installed via `Settings → Appearance → Themes → Manage`, and most expose knobs through **Style Settings**. Use the **Open** link to preview one, or browse everything in the official [theme gallery](https://community.obsidian.md/themes).",
+      "templates": "> ⚖️ **Warning about starter vaults:** they arrive pre-loaded with someone else's plugins and folder logic. Borrow the *ideas*, not necessarily the `.obsidian` folder — inherited configs are the hardest kind to debug."
+    }
+  }
+}

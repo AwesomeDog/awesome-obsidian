@@ -1,0 +1,47 @@
+name: 🔄 Monthly Auto-Update
+
+on:
+  schedule:
+    # Run on the 1st of every month at 03:00 UTC
+    - cron: '0 3 1 * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+  push:
+    paths:
+      - 'data/curated.json'
+      - 'scripts/build.py'
+      - 'data/**'
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🚀 Run Build Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/build.py --refresh
+
+      - name: 💾 Commit and push changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes detected."
+          else
+            git commit -m "chore(auto-update): refresh trending plugins and readme for $(date +'%Y-%m-%d') [skip ci]"
+            git push
+          fi

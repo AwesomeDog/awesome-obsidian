@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome Obsidian</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"
+          content="A maintenance-aware map of Obsidian plugins, themes, and workflows, organized by the jobs a vault needs to do.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+
+    <!-- Active Theme Stylesheets -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+
+    <style>
+        :root {
+            --theme-color: #7c3aed; /* Obsidian Signature Purple */
+        }
+
+        .markdown-section {
+            max-width: 980px;
+            padding: 30px 40px;
+        }
+
+        table {
+            display: table !important;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 10px 14px;
+        }
+
+        td a {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div id="app">Loading Awesome Obsidian...</div>
+<script>
+    window.$docsify = {
+        name: '💎 Awesome Obsidian',
+        repo: 'https://github.com/AwesomeDog/awesome-obsidian',
+
+        // GitHub Pages serves /docs as the site root, so the repo-root README.md is
+        // out of reach. Point docsify at the raw file on main instead; docsify returns
+        // an absolute basePath verbatim, so relative links (CONTRIBUTING.md) resolve too.
+        basePath: 'https://raw.githubusercontent.com/AwesomeDog/awesome-obsidian/main/',
+
+        homepage: 'README.md',
+
+        loadSidebar: false,
+        subMaxLevel: 2,
+        auto2top: true,
+
+        search: {
+            maxAge: 86400000,
+            paths: 'auto',
+            placeholder: '🔍 Search plugins, authors, keywords...',
+            noData: 'No results found',
+            depth: 3
+        },
+
+        darklightTheme: {
+            siteFont: 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif',
+            defaultTheme: 'dark'
+        }
+    }
+</script>
+
+<!-- Docsify Core Engine -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+<!-- Built-in Search Plugin -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+<!-- Dark/Light Mode Switcher Plugin -->
+<script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+
+<!-- One-click Code/Link Copy Button -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
