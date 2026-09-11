@@ -39,6 +39,11 @@
             --theme-color: #7c3aed; /* Obsidian Signature Purple */
         }
 
+        /* The banner pointing at this site only makes sense on GitHub. */
+        .github-only {
+            display: none !important;
+        }
+
         .markdown-section {
             max-width: 980px;
             padding: 30px 40px;
@@ -78,6 +83,19 @@
         loadSidebar: false,
         subMaxLevel: 2,
         auto2top: true,
+
+        // The README opens with a banner pointing at this site for a better reading
+        // experience. GitHub strips `class` attributes when it renders Markdown, so
+        // a CSS rule cannot hide it here — drop it from the source before rendering.
+        plugins: [
+            function (hook) {
+                hook.beforeEach(function (markdown) {
+                    return markdown.replace(
+                        /<p align="center" class="github-only">[\s\S]*?<\/p>\n?/g, ''
+                    );
+                });
+            }
+        ],
 
         search: {
             maxAge: 86400000,

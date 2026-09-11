@@ -14,6 +14,10 @@
 [![Stars](https://img.shields.io/github/stars/AwesomeDog/awesome-obsidian?style=flat&logo=github)](https://github.com/AwesomeDog/awesome-obsidian/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/AwesomeDog/awesome-obsidian)](https://github.com/AwesomeDog/awesome-obsidian/commits)
 
+<p align="center" class="github-only">
+  <b>Reading this on GitHub?</b> Try the <a href="https://awesomedog.github.io/awesome-obsidian/"><b>searchable web version</b></a> — full-text search, collapsible sections, and a light/dark theme toggle.
+</p>
+
 </div>
 
 ---
