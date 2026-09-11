@@ -14,6 +14,10 @@
 [![Stars](https://img.shields.io/github/stars/AwesomeDog/awesome-obsidian?style=flat&logo=github)](https://github.com/AwesomeDog/awesome-obsidian/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/AwesomeDog/awesome-obsidian)](https://github.com/AwesomeDog/awesome-obsidian/commits)
 
+<p align="center" class="github-only">
+  <b>Reading this on GitHub?</b> Try the <a href="https://awesomedog.github.io/awesome-obsidian/"><b>searchable web version</b></a> — full-text search, collapsible sections, and a light/dark theme toggle.
+</p>
+
 </div>
 
 ---
@@ -558,7 +562,7 @@ Decide what may leave the vault -> retrieve only the context needed -> use AI fo
 
 This automated table shows newly registered community plugins ranked by downloads. Anything already listed in the curated catalog or a playbook is skipped, so the table only surfaces names you have not seen above. It is a discovery signal, not a recommendation or security review.
 
-<sub>📈 **Lookback Period**: Past 120 Days (2026-05-14 ~ 2026-09-11) | **New Plugins Tracked**: 4,101 | **Last Refreshed**: `2026-09-11`</sub>
+<sub>📈 **Lookback Period**: Past 120 Days (2026-05-14 ~ 2026-09-11) | **New Plugins Tracked**: 4,109 | **Last Refreshed**: `2026-09-11`</sub>
 
 <!-- AUTO-GENERATED-CONTENT:START (rising-stars) — do not edit this table by hand -->
 
